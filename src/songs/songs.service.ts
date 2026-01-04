@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { error } from 'console';
 
 @Injectable()
 export class SongsService {
@@ -9,6 +10,7 @@ export class SongsService {
         return this.songs;
     }
     findAll(){
+        // throw new Error('Error in db')
         return this.songs;
     }
     
