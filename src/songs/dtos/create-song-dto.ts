@@ -2,7 +2,7 @@ import { IsArray, IsMilitaryTime, IsNotEmpty, IsString ,IsDateString} from "clas
 
 export class CreateSongDTO{
     @IsString()
-    @IsNotEmpty()
+    @IsNotEmpty()               
     readonly title:String;
     
     @IsString({each: true})

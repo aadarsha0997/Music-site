@@ -3,7 +3,7 @@ import { error } from 'console';
 
 @Injectable()
 export class SongsService {
-    private readonly  songs:string[]=['hello ','world'];
+    private readonly  songs:string[]=['let her go ','normal regular guy'];
 
     create(song){
         this.songs.push(song);
