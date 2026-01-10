@@ -3,13 +3,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SongsModule } from './songs/songs.module';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
-import { SongsController } from './songs/songs.controller';
 import { AuthModule } from './Auth/auth.module';
 import { UserModule } from './user/user.module';
 import { BookmarkModule } from './bookmark/bookmark.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
-  imports: [SongsModule,AuthModule, UserModule, BookmarkModule],
+  imports: [SongsModule,AuthModule, UserModule, BookmarkModule, PrismaModule,],
   controllers: [AppController],
   providers: [AppService],
 })

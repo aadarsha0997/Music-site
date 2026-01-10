@@ -5,15 +5,11 @@ services:
     image: postgres:15
     ports:
       - "5432:5432"
-    # container_name: my-postgres
+    container_name: jr-dev_db
     # restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
       POSTGRES_DB: nest
-    networks:
-        - freecodecam
-      # - postgres_data:/var/lib/postgresql/data
-
-networks:
-  freecodecam:
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
